@@ -11,11 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Controllers.WeightActivity"></activity>
-        <activity android:name=".Controllers.DistanceActivity" />
-        <activity
-            android:name=".Controllers.ServiceActivity"
-            android:parentActivityName=".Controllers.MainActivity" />
+        <activity android:name=".Controllers.LiquidActivity" android:parentActivityName=".Controllers.ServiceActivity"/>
+        <activity android:name=".Controllers.TimeActivity" android:parentActivityName=".Controllers.ServiceActivity"/>
+        <activity android:name=".Controllers.WeightActivity" android:parentActivityName=".Controllers.ServiceActivity"/>
+        <activity android:name=".Controllers.DistanceActivity" android:parentActivityName=".Controllers.ServiceActivity"/>
+        <activity android:name=".Controllers.ServiceActivity" android:parentActivityName=".Controllers.MainActivity" />
         <activity android:name=".Controllers.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

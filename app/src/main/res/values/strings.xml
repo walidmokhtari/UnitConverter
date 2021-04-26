@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Unit Converter</string>
+    <string name="tv_w">Welcome</string>
+    <string name="b_s">Start</string>
+    <string name="tv_cs">Choose a service</string>
+    <string name="b_d">Distance unit converter</string>
+    <string name="b_w">Weight unit converter</string>
+    <string name="b_t">Time unit converter</string>
+    <string name="b_lp">Liquid product unit converter</string>
+    <string name="b_mc">Make a conversion</string>
+    <string name="b_vch">View conversion history</string>
 </resources>

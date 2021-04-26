@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Convertisseur d\'unité</string>
+    <string name="tv_w">Bienvenus</string>
+    <string name="b_s">Commencer</string>
+    <string name="tv_cs">Choisissez un service</string>
+    <string name="b_d">Convertisseur unité de temps</string>
+    <string name="b_w">Convertisseur unité de poids</string>
+    <string name="b_t">Convertisseur unité de temps</string>
+    <string name="b_lp">Convertisseur unité de produits liquides</string>
+    <string name="b_mc">Faire une conversion</string>
+    <string name="b_vch">Historique des conversions</string>
+</resources>

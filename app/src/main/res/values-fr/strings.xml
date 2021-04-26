@@ -4,7 +4,7 @@
     <string name="tv_w">Bienvenus</string>
     <string name="b_s">Commencer</string>
     <string name="tv_cs">Choisissez un service</string>
-    <string name="b_d">Convertisseur unité de temps</string>
+    <string name="b_d">Convertisseur unité de distance</string>
     <string name="b_w">Convertisseur unité de poids</string>
     <string name="b_t">Convertisseur unité de temps</string>
     <string name="b_lp">Convertisseur unité de produits liquides</string>

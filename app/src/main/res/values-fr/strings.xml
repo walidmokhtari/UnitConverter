@@ -10,4 +10,6 @@
     <string name="b_lp">Convertisseur unité de produits liquides</string>
     <string name="b_mc">Faire une conversion</string>
     <string name="b_vch">Historique des conversions</string>
+    <string name="b_c">Convertir</string>
+    <string name="b_sa">Sauvegarder</string>
 </resources>

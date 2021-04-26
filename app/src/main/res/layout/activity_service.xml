@@ -13,6 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/tv_cs"
+        android:textAlignment="center"
         android:textColor="@color/app_blue"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"

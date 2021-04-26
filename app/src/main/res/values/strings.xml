@@ -9,4 +9,6 @@
     <string name="b_lp">Liquid product unit converter</string>
     <string name="b_mc">Make a conversion</string>
     <string name="b_vch">View conversion history</string>
+    <string name="b_c">Convert</string>
+    <string name="b_sa">Save</string>
 </resources>

@@ -69,6 +69,14 @@ public class LiquidCActivity extends AppCompatActivity {
                         et_l.setText("L : "+l.getL());
                         et_dal.setText("Dal : "+l.getDal());
                         et_hl.setText("Hl : "+l.getHl());
+
+                        //Désactiver la modification des EditText
+                        et_ml.setEnabled(false);
+                        et_cl.setEnabled(false);
+                        et_dl.setEnabled(false);
+                        et_l.setEnabled(false);
+                        et_dal.setEnabled(false);
+                        et_hl.setEnabled(false);
                     }else {
                         if(r_et_ml.matches("") && !r_et_cl.matches("") && r_et_dl.matches("") && r_et_l.matches("")
                                 && r_et_dal.matches("") && r_et_hl.matches("")){
@@ -86,6 +94,14 @@ public class LiquidCActivity extends AppCompatActivity {
                             et_l.setText("L : "+l.getL());
                             et_dal.setText("Dal : "+l.getDal());
                             et_hl.setText("Hl : "+l.getHl());
+
+                            //Désactiver la modification des EditText
+                            et_ml.setEnabled(false);
+                            et_cl.setEnabled(false);
+                            et_dl.setEnabled(false);
+                            et_l.setEnabled(false);
+                            et_dal.setEnabled(false);
+                            et_hl.setEnabled(false);
                         } else {
                             if(r_et_ml.matches("") && r_et_cl.matches("") && !r_et_dl.matches("") && r_et_l.matches("")
                                     && r_et_dal.matches("") && r_et_hl.matches("")) {
@@ -103,6 +119,14 @@ public class LiquidCActivity extends AppCompatActivity {
                                 et_l.setText("L : "+l.getL());
                                 et_dal.setText("Dal : "+l.getDal());
                                 et_hl.setText("Hl : "+l.getHl());
+
+                                //Désactiver la modification des EditText
+                                et_ml.setEnabled(false);
+                                et_cl.setEnabled(false);
+                                et_dl.setEnabled(false);
+                                et_l.setEnabled(false);
+                                et_dal.setEnabled(false);
+                                et_hl.setEnabled(false);
                             } else {
                                 if(r_et_ml.matches("") && r_et_cl.matches("") && r_et_dl.matches("") && !r_et_l.matches("")
                                         && r_et_dal.matches("") && r_et_hl.matches("")) {
@@ -120,6 +144,14 @@ public class LiquidCActivity extends AppCompatActivity {
                                     et_l.setText("L : "+l.getL());
                                     et_dal.setText("Dal : "+l.getDal());
                                     et_hl.setText("Hl : "+l.getHl());
+
+                                    //Désactiver la modification des EditText
+                                    et_ml.setEnabled(false);
+                                    et_cl.setEnabled(false);
+                                    et_dl.setEnabled(false);
+                                    et_l.setEnabled(false);
+                                    et_dal.setEnabled(false);
+                                    et_hl.setEnabled(false);
                                 } else {
                                     if(r_et_ml.matches("") && r_et_cl.matches("") && r_et_dl.matches("") && r_et_l.matches("")
                                             && !r_et_dal.matches("") && r_et_hl.matches("")) {
@@ -137,6 +169,14 @@ public class LiquidCActivity extends AppCompatActivity {
                                         et_l.setText("L : "+l.getL());
                                         et_dal.setText("Dal : "+l.getDal());
                                         et_hl.setText("Hl : "+l.getHl());
+
+                                        //Désactiver la modification des EditText
+                                        et_ml.setEnabled(false);
+                                        et_cl.setEnabled(false);
+                                        et_dl.setEnabled(false);
+                                        et_l.setEnabled(false);
+                                        et_dal.setEnabled(false);
+                                        et_hl.setEnabled(false);
                                     } else {
                                         if(r_et_ml.matches("") && r_et_cl.matches("") && r_et_dl.matches("") && r_et_l.matches("")
                                                 && r_et_dal.matches("") && !r_et_hl.matches("")) {
@@ -154,6 +194,14 @@ public class LiquidCActivity extends AppCompatActivity {
                                             et_l.setText("L : "+l.getL());
                                             et_dal.setText("Dal : "+l.getDal());
                                             et_hl.setText("Hl : "+l.getHl());
+
+                                            //Désactiver la modification des EditText
+                                            et_ml.setEnabled(false);
+                                            et_cl.setEnabled(false);
+                                            et_dl.setEnabled(false);
+                                            et_l.setEnabled(false);
+                                            et_dal.setEnabled(false);
+                                            et_hl.setEnabled(false);
                                         } else {
                                                 tv_e.setText(getText(R.string.t_e));
                                                 tv_e.setTextColor(Color.RED);

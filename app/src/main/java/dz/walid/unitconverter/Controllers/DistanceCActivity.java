@@ -72,6 +72,15 @@ public class DistanceCActivity extends AppCompatActivity {
                         et_dam.setText("Dam : "+d.getDam());
                         et_hm.setText("Hm : "+d.getHm());
                         et_km.setText("Km : "+d.getKm());
+
+                        //Désactiver la modification des EditText
+                        et_mm.setEnabled(false);
+                        et_cm.setEnabled(false);
+                        et_dm.setEnabled(false);
+                        et_m.setEnabled(false);
+                        et_dam.setEnabled(false);
+                        et_hm.setEnabled(false);
+                        et_km.setEnabled(false);
                     }else {
                         if(r_et_mm.matches("") && !r_et_cm.matches("") && r_et_dm.matches("") && r_et_m.matches("")
                                 && r_et_dam.matches("") && r_et_hm.matches("") && r_et_km.matches("")){
@@ -110,6 +119,15 @@ public class DistanceCActivity extends AppCompatActivity {
                                 et_dam.setText("Dam : "+d.getDam());
                                 et_hm.setText("Hm : "+d.getHm());
                                 et_km.setText("Km : "+d.getKm());
+
+                                //Désactiver la modification des EditText
+                                et_mm.setEnabled(false);
+                                et_cm.setEnabled(false);
+                                et_dm.setEnabled(false);
+                                et_m.setEnabled(false);
+                                et_dam.setEnabled(false);
+                                et_hm.setEnabled(false);
+                                et_km.setEnabled(false);
                             } else {
                                 if(r_et_mm.matches("") && r_et_cm.matches("") && r_et_dm.matches("") && !r_et_m.matches("")
                                         && r_et_dam.matches("") && r_et_hm.matches("") && r_et_km.matches("")) {
@@ -129,6 +147,15 @@ public class DistanceCActivity extends AppCompatActivity {
                                     et_dam.setText("Dam : "+d.getDam());
                                     et_hm.setText("Hm : "+d.getHm());
                                     et_km.setText("Km : "+d.getKm());
+
+                                    //Désactiver la modification des EditText
+                                    et_mm.setEnabled(false);
+                                    et_cm.setEnabled(false);
+                                    et_dm.setEnabled(false);
+                                    et_m.setEnabled(false);
+                                    et_dam.setEnabled(false);
+                                    et_hm.setEnabled(false);
+                                    et_km.setEnabled(false);
                                 } else {
                                     if(r_et_mm.matches("") && r_et_cm.matches("") && r_et_dm.matches("") && r_et_m.matches("")
                                             && !r_et_dam.matches("") && r_et_hm.matches("") && r_et_km.matches("")) {
@@ -148,6 +175,15 @@ public class DistanceCActivity extends AppCompatActivity {
                                         et_dam.setText("Dam : "+d.getDam());
                                         et_hm.setText("Hm : "+d.getHm());
                                         et_km.setText("Km : "+d.getKm());
+
+                                        //Désactiver la modification des EditText
+                                        et_mm.setEnabled(false);
+                                        et_cm.setEnabled(false);
+                                        et_dm.setEnabled(false);
+                                        et_m.setEnabled(false);
+                                        et_dam.setEnabled(false);
+                                        et_hm.setEnabled(false);
+                                        et_km.setEnabled(false);
                                     } else {
                                         if(r_et_mm.matches("") && r_et_cm.matches("") && r_et_dm.matches("") && r_et_m.matches("")
                                                 && r_et_dam.matches("") && !r_et_hm.matches("") && r_et_km.matches("")) {
@@ -167,6 +203,15 @@ public class DistanceCActivity extends AppCompatActivity {
                                             et_dam.setText("Dam : "+d.getDam());
                                             et_hm.setText("Hm : "+d.getHm());
                                             et_km.setText("Km : "+d.getKm());
+
+                                            //Désactiver la modification des EditText
+                                            et_mm.setEnabled(false);
+                                            et_cm.setEnabled(false);
+                                            et_dm.setEnabled(false);
+                                            et_m.setEnabled(false);
+                                            et_dam.setEnabled(false);
+                                            et_hm.setEnabled(false);
+                                            et_km.setEnabled(false);
                                         } else {
                                             if(r_et_mm.matches("") && r_et_cm.matches("") && r_et_dm.matches("") && r_et_m.matches("")
                                                     && r_et_dam.matches("") && r_et_hm.matches("") && !r_et_km.matches("")) {
@@ -186,6 +231,15 @@ public class DistanceCActivity extends AppCompatActivity {
                                                 et_dam.setText("Dam : "+d.getDam());
                                                 et_hm.setText("Hm : "+d.getHm());
                                                 et_km.setText("Km : "+d.getKm());
+
+                                                //Désactiver la modification des EditText
+                                                et_mm.setEnabled(false);
+                                                et_cm.setEnabled(false);
+                                                et_dm.setEnabled(false);
+                                                et_m.setEnabled(false);
+                                                et_dam.setEnabled(false);
+                                                et_hm.setEnabled(false);
+                                                et_km.setEnabled(false);
                                             } else {
                                                 tv_e.setText(getText(R.string.t_e));
                                                 tv_e.setTextColor(Color.RED);

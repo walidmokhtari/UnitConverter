@@ -55,6 +55,11 @@ public class TimeCActivity extends AppCompatActivity {
                         et_s.setText("S : "+t.getSeconde());
                         et_min.setText("Min : "+t.getMinute());
                         et_h.setText("H : "+t.getHeure());
+
+                        //Désactiver la modification des EditText
+                        et_s.setEnabled(false);
+                        et_min.setEnabled(false);
+                        et_h.setEnabled(false);
                     } else {
                         if (r_et_s.matches("") && !r_et_min.matches("") && r_et_h.matches("")) {
                             t.setMinute(Double.parseDouble(r_et_min));
@@ -65,6 +70,11 @@ public class TimeCActivity extends AppCompatActivity {
                             et_s.setText("S : "+t.getSeconde());
                             et_min.setText("Min : "+t.getMinute());
                             et_h.setText("H : "+t.getHeure());
+
+                            //Désactiver la modification des EditText
+                            et_s.setEnabled(false);
+                            et_min.setEnabled(false);
+                            et_h.setEnabled(false);
                         } else {
                             if (r_et_s.matches("") && r_et_min.matches("") && !r_et_h.matches("")) {
                                 t.setHeure(Double.parseDouble(r_et_h));
@@ -75,6 +85,11 @@ public class TimeCActivity extends AppCompatActivity {
                                 et_s.setText("S : "+t.getSeconde());
                                 et_min.setText("Min : "+t.getMinute());
                                 et_h.setText("H : "+t.getHeure());
+
+                                //Désactiver la modification des EditText
+                                et_s.setEnabled(false);
+                                et_min.setEnabled(false);
+                                et_h.setEnabled(false);
                             } else {
                                 tv_e.setText(getText(R.string.t_e));
                                 tv_e.setTextColor(Color.RED);

@@ -73,6 +73,15 @@ public class WeightCActivity extends AppCompatActivity {
                         et_dag.setText("Dag : "+w.getDag());
                         et_hg.setText("Hg : "+w.getHg());
                         et_kg.setText("Kg : "+w.getKg());
+
+                        //Désactiver la modification des EditText
+                        et_mg.setEnabled(false);
+                        et_cg.setEnabled(false);
+                        et_dg.setEnabled(false);
+                        et_g.setEnabled(false);
+                        et_dag.setEnabled(false);
+                        et_hg.setEnabled(false);
+                        et_kg.setEnabled(false);
                     }else {
                         if(r_et_mg.matches("") && !r_et_cg.matches("") && r_et_dg.matches("") && r_et_g.matches("")
                                 && r_et_dag.matches("") && r_et_hg.matches("") && r_et_kg.matches("")){
@@ -92,6 +101,15 @@ public class WeightCActivity extends AppCompatActivity {
                             et_dag.setText("Dag : "+w.getDag());
                             et_hg.setText("Hg : "+w.getHg());
                             et_kg.setText("Kg : "+w.getKg());
+
+                            //Désactiver la modification des EditText
+                            et_mg.setEnabled(false);
+                            et_cg.setEnabled(false);
+                            et_dg.setEnabled(false);
+                            et_g.setEnabled(false);
+                            et_dag.setEnabled(false);
+                            et_hg.setEnabled(false);
+                            et_kg.setEnabled(false);
                         } else {
                             if(r_et_mg.matches("") && r_et_cg.matches("") && !r_et_dg.matches("") && r_et_g.matches("")
                                     && r_et_dag.matches("") && r_et_hg.matches("") && r_et_kg.matches("")) {
@@ -111,6 +129,15 @@ public class WeightCActivity extends AppCompatActivity {
                                 et_dag.setText("Dag : "+w.getDag());
                                 et_hg.setText("Hg : "+w.getHg());
                                 et_kg.setText("Kg : "+w.getKg());
+
+                                //Désactiver la modification des EditText
+                                et_mg.setEnabled(false);
+                                et_cg.setEnabled(false);
+                                et_dg.setEnabled(false);
+                                et_g.setEnabled(false);
+                                et_dag.setEnabled(false);
+                                et_hg.setEnabled(false);
+                                et_kg.setEnabled(false);
                             } else {
                                 if(r_et_mg.matches("") && r_et_cg.matches("") && r_et_dg.matches("") && !r_et_g.matches("")
                                         && r_et_dag.matches("") && r_et_hg.matches("") && r_et_kg.matches("")) {
@@ -130,6 +157,15 @@ public class WeightCActivity extends AppCompatActivity {
                                     et_dag.setText("Dag : "+w.getDag());
                                     et_hg.setText("Hg : "+w.getHg());
                                     et_kg.setText("Kg : "+w.getKg());
+
+                                    //Désactiver la modification des EditText
+                                    et_mg.setEnabled(false);
+                                    et_cg.setEnabled(false);
+                                    et_dg.setEnabled(false);
+                                    et_g.setEnabled(false);
+                                    et_dag.setEnabled(false);
+                                    et_hg.setEnabled(false);
+                                    et_kg.setEnabled(false);
                                 } else {
                                     if(r_et_mg.matches("") && r_et_cg.matches("") && r_et_dg.matches("") && r_et_g.matches("")
                                             && !r_et_dag.matches("") && r_et_hg.matches("") && r_et_kg.matches("")) {
@@ -149,6 +185,15 @@ public class WeightCActivity extends AppCompatActivity {
                                         et_dag.setText("Dag : "+w.getDag());
                                         et_hg.setText("Hg : "+w.getHg());
                                         et_kg.setText("Kg : "+w.getKg());
+
+                                        //Désactiver la modification des EditText
+                                        et_mg.setEnabled(false);
+                                        et_cg.setEnabled(false);
+                                        et_dg.setEnabled(false);
+                                        et_g.setEnabled(false);
+                                        et_dag.setEnabled(false);
+                                        et_hg.setEnabled(false);
+                                        et_kg.setEnabled(false);
                                     } else {
                                         if(r_et_mg.matches("") && r_et_cg.matches("") && r_et_dg.matches("") && r_et_g.matches("")
                                                 && r_et_dag.matches("") && !r_et_hg.matches("") && r_et_kg.matches("")) {
@@ -168,6 +213,15 @@ public class WeightCActivity extends AppCompatActivity {
                                             et_dag.setText("Dag : "+w.getDag());
                                             et_hg.setText("Hg : "+w.getHg());
                                             et_kg.setText("Kg : "+w.getKg());
+
+                                            //Désactiver la modification des EditText
+                                            et_mg.setEnabled(false);
+                                            et_cg.setEnabled(false);
+                                            et_dg.setEnabled(false);
+                                            et_g.setEnabled(false);
+                                            et_dag.setEnabled(false);
+                                            et_hg.setEnabled(false);
+                                            et_kg.setEnabled(false);
                                         } else {
                                             if(r_et_mg.matches("") && r_et_cg.matches("") && r_et_dg.matches("") && r_et_g.matches("")
                                                     && r_et_dag.matches("") && r_et_hg.matches("") && !r_et_kg.matches("")) {
@@ -187,6 +241,15 @@ public class WeightCActivity extends AppCompatActivity {
                                                 et_dag.setText("Dag : "+w.getDag());
                                                 et_hg.setText("Hg : "+w.getHg());
                                                 et_kg.setText("Kg : "+w.getKg());
+
+                                                //Désactiver la modification des EditText
+                                                et_mg.setEnabled(false);
+                                                et_cg.setEnabled(false);
+                                                et_dg.setEnabled(false);
+                                                et_g.setEnabled(false);
+                                                et_dag.setEnabled(false);
+                                                et_hg.setEnabled(false);
+                                                et_kg.setEnabled(false);
                                             } else {
                                                 tv_e.setText(getText(R.string.t_e));
                                                 tv_e.setTextColor(Color.RED);

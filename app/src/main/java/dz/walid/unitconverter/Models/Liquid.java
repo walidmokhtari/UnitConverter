@@ -13,12 +13,12 @@ public class Liquid {
     private double hl;
 
     //Setters
-    public void setMl(float ml) { this.ml = ml;}
-    public void setCl(float cl) { this.cl = cl;}
-    public void setDl(float dl) { this.dl = dl;}
-    public void setL(float l) { this.l = l;}
-    public void setDag(float dal) { this.dal = dal;}
-    public void setHg(float hl) { this.hl = hl;}
+    public void setMl(double ml) { this.ml = ml;}
+    public void setCl(double cl) { this.cl = cl;}
+    public void setDl(double dl) { this.dl = dl;}
+    public void setL(double l) { this.l = l;}
+    public void setDal(double dal) { this.dal = dal;}
+    public void setHl(double hl) { this.hl = hl;}
 
     //Getters
     public double getMl() {return this.ml;}

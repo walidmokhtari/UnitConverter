@@ -14,13 +14,13 @@ public class Distance {
     private double km;
 
     //Setters
-    public void setMm(float mm) { this.mm = mm;}
-    public void setCm(float cm) { this.cm = cm;}
-    public void setDm(float dm) { this.dm = dm;}
-    public void setM(float m) { this.m = m;}
-    public void setDam(float dam) { this.dam = dam;}
-    public void setHm(float hm) { this.hm = hm;}
-    public void setKm(float km) { this.km = km;}
+    public void setMm(double mm) { this.mm = mm;}
+    public void setCm(double cm) { this.cm = cm;}
+    public void setDm(double dm) { this.dm = dm;}
+    public void setM(double m) { this.m = m;}
+    public void setDam(double dam) { this.dam = dam;}
+    public void setHm(double hm) { this.hm = hm;}
+    public void setKm(double km) { this.km = km;}
 
     //Getters
     public double getMm() {return this.mm;}
@@ -87,7 +87,7 @@ public class Distance {
     public void KmToDm(double km) { this.dm = km * 10000; }
     public void KmToM(double km) { this.m = km * 1000; }
     public void KmToDam(double km) { this.dam = km * 100; }
-    public void HmToHm(double km) { this.hm = km * 10; }
+    public void KmToHm(double km) { this.hm = km * 10; }
 
 
 }

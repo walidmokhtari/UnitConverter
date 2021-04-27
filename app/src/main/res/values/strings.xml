@@ -11,4 +11,5 @@
     <string name="b_vch">View conversion history</string>
     <string name="b_c">Convert</string>
     <string name="b_sa">Save</string>
+    <string name="t_e">Error: you must fill in only one field</string>
 </resources>

@@ -14,13 +14,13 @@ public class Weight {
     private double kg;
 
     //Setters
-    public void setMg(float mg) { this.mg = mg;}
-    public void setCg(float cg) { this.cg = cg;}
-    public void setDg(float dg) { this.dg = dg;}
-    public void setG(float g) { this.g = g;}
-    public void setDag(float dag) { this.dag = dag;}
-    public void setHg(float hg) { this.hg = hg;}
-    public void setKg(float kg) { this.kg = kg;}
+    public void setMg(double mg) { this.mg = mg;}
+    public void setCg(double cg) { this.cg = cg;}
+    public void setDg(double dg) { this.dg = dg;}
+    public void setG(double g) { this.g = g;}
+    public void setDag(double dag) { this.dag = dag;}
+    public void setHg(double hg) { this.hg = hg;}
+    public void setKg(double kg) { this.kg = kg;}
 
     //Getters
     public double getMg() {return this.mg;}
@@ -87,5 +87,5 @@ public class Weight {
     public void KgToDg(double kg) { this.dg = kg * 10000; }
     public void KgToG(double kg) { this.g = kg * 1000; }
     public void KgToDag(double kg) { this.dag = kg * 100; }
-    public void HgToHg(double kg) { this.hg = kg * 10; }
+    public void KgToHg(double kg) { this.hg = kg * 10; }
 }

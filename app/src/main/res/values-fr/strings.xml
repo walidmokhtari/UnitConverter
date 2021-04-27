@@ -12,4 +12,5 @@
     <string name="b_vch">Historique des conversions</string>
     <string name="b_c">Convertir</string>
     <string name="b_sa">Sauvegarder</string>
+    <string name="t_e">Erreur : vous devez remplir un seul champ</string>
 </resources>

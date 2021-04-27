@@ -13,4 +13,6 @@
     <string name="b_c">Convertir</string>
     <string name="b_sa">Sauvegarder</string>
     <string name="t_e">Erreur : vous devez remplir un seul champ</string>
+    <string name="t_ebd">Erreur : vous n\'avez fait aucune conversion</string>
+    <string name="t_s">Succes : Votre conversion a été sauvegardée</string>
 </resources>

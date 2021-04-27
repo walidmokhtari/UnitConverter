@@ -10,6 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+
 import dz.walid.unitconverter.Models.Distance;
 import dz.walid.unitconverter.R;
 
@@ -253,6 +258,51 @@ public class DistanceCActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     //En cas d'erreur
                     tv_e.setText(getText(R.string.t_e));
+                    tv_e.setTextColor(Color.RED);
+                }
+            }
+        });
+
+        //Faire un lien avec la base de données
+        final FirebaseDatabase db = FirebaseDatabase.getInstance();
+        final DatabaseReference r_d = db.getReference().child("Distance");
+
+        //Onclick Save
+        b_s.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    //Récupérer ce qu'il y'a dans l'Edit Text
+                    String r_et_mm = et_mm.getText().toString();
+                    String r_et_cm = et_cm.getText().toString();
+                    String r_et_dm = et_dm.getText().toString();
+                    String r_et_m = et_m.getText().toString();
+                    String r_et_dam = et_dam.getText().toString();
+                    String r_et_hm = et_hm.getText().toString();
+                    String r_et_km = et_km.getText().toString();
+                    if (!r_et_mm.matches("") && !r_et_cm.matches("") && !r_et_dm.matches("") && !r_et_m.matches("")
+                            && !r_et_dam.matches("") && !r_et_hm.matches("")) {
+                        //Sauvegarder les données dans la base de données
+                        HashMap<String, String> timeMap = new HashMap<>();
+                        timeMap.put("mm",r_et_mm);
+                        timeMap.put("cm",r_et_cm);
+                        timeMap.put("dm",r_et_dm);
+                        timeMap.put("m",r_et_m);
+                        timeMap.put("dam",r_et_dam);
+                        timeMap.put("hm",r_et_hm);
+                        timeMap.put("km",r_et_km);
+
+                        r_d.push().setValue(timeMap);
+                        tv_e.setText(getText(R.string.t_s));
+                        tv_e.setTextColor(Color.GREEN);
+                    } else {
+                        tv_e.setText(getText(R.string.t_ebd));
+                        tv_e.setTextColor(Color.RED);
+                    }
+
+                } catch (Exception e) {
+                    //En cas d'erreur
+                    tv_e.setText(getText(R.string.t_ebd));
                     tv_e.setTextColor(Color.RED);
                 }
             }

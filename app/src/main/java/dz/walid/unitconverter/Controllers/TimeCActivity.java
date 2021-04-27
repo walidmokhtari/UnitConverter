@@ -2,12 +2,18 @@ package dz.walid.unitconverter.Controllers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 import dz.walid.unitconverter.Models.Liquid;
 import dz.walid.unitconverter.Models.Time;
@@ -35,7 +41,7 @@ public class TimeCActivity extends AppCompatActivity {
         final Button b_s = findViewById(R.id.b_s);
         final TextView tv_e = findViewById(R.id.tv_e);
 
-        //Onclick
+        //Onclick Convert
         b_c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -105,6 +111,41 @@ public class TimeCActivity extends AppCompatActivity {
             }
         });
 
+        //Faire un lien avec la base de données
+        final FirebaseDatabase db = FirebaseDatabase.getInstance();
+        final DatabaseReference r_t = db.getReference().child("Time");
+
+        //Onclick Save
+        b_s.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    //Récupérer ce qu'il y'a dans l'Edit Text
+                    String r_et_s = et_s.getText().toString();
+                    String r_et_min = et_min.getText().toString();
+                    String r_et_h = et_h.getText().toString();
+                    if (!r_et_s.matches("") && !r_et_min.matches("") && !r_et_h.matches("")) {
+                        //Sauvegarder les données dans la base de données
+                        HashMap<String, String> timeMap = new HashMap<>();
+                        timeMap.put("s",r_et_s);
+                        timeMap.put("min",r_et_min);
+                        timeMap.put("h",r_et_h);
+
+                        r_t.push().setValue(timeMap);
+                        tv_e.setText(getText(R.string.t_s));
+                        tv_e.setTextColor(Color.GREEN);
+                    } else {
+                        tv_e.setText(getText(R.string.t_ebd));
+                        tv_e.setTextColor(Color.RED);
+                    }
+
+                } catch (Exception e) {
+                    //En cas d'erreur
+                    tv_e.setText(getText(R.string.t_ebd));
+                    tv_e.setTextColor(Color.RED);
+                }
+            }
+        });
 
     }
 }

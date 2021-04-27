@@ -9,6 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+
 import dz.walid.unitconverter.Models.Distance;
 import dz.walid.unitconverter.Models.Weight;
 import dz.walid.unitconverter.R;
@@ -265,6 +270,51 @@ public class WeightCActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     //En cas d'erreur
                     tv_e.setText(getText(R.string.t_e));
+                    tv_e.setTextColor(Color.RED);
+                }
+            }
+        });
+
+        //Faire un lien avec la base de données
+        final FirebaseDatabase db = FirebaseDatabase.getInstance();
+        final DatabaseReference r_w = db.getReference().child("Weight");
+
+        //Onclick Save
+        b_s.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    //Récupérer ce qu'il y'a dans l'Edit Text
+                    String r_et_mg = et_mg.getText().toString();
+                    String r_et_cg = et_cg.getText().toString();
+                    String r_et_dg = et_dg.getText().toString();
+                    String r_et_g = et_g.getText().toString();
+                    String r_et_dag = et_dag.getText().toString();
+                    String r_et_hg = et_hg.getText().toString();
+                    String r_et_kg = et_kg.getText().toString();
+                    if (!r_et_mg.matches("") && !r_et_cg.matches("") && !r_et_dg.matches("") && !r_et_g.matches("")
+                            && !r_et_dag.matches("") && !r_et_hg.matches("")) {
+                        //Sauvegarder les données dans la base de données
+                        HashMap<String, String> timeMap = new HashMap<>();
+                        timeMap.put("mg",r_et_mg);
+                        timeMap.put("cg",r_et_cg);
+                        timeMap.put("dg",r_et_dg);
+                        timeMap.put("g",r_et_g);
+                        timeMap.put("dag",r_et_dag);
+                        timeMap.put("hg",r_et_hg);
+                        timeMap.put("kg",r_et_kg);
+
+                        r_w.push().setValue(timeMap);
+                        tv_e.setText(getText(R.string.t_s));
+                        tv_e.setTextColor(Color.GREEN);
+                    } else {
+                        tv_e.setText(getText(R.string.t_ebd));
+                        tv_e.setTextColor(Color.RED);
+                    }
+
+                } catch (Exception e) {
+                    //En cas d'erreur
+                    tv_e.setText(getText(R.string.t_ebd));
                     tv_e.setTextColor(Color.RED);
                 }
             }

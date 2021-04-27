@@ -12,4 +12,6 @@
     <string name="b_c">Convert</string>
     <string name="b_sa">Save</string>
     <string name="t_e">Error: you must fill in only one field</string>
+    <string name="t_ebd">Error : You have not made any conversion</string>
+    <string name="t_s">Succes : Your conversion has been saved</string>
 </resources>

@@ -9,6 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+
 import dz.walid.unitconverter.Models.Liquid;
 import dz.walid.unitconverter.Models.Weight;
 import dz.walid.unitconverter.R;
@@ -222,6 +227,47 @@ public class LiquidCActivity extends AppCompatActivity {
             }
         });
 
+        //Faire un lien avec la base de données
+        final FirebaseDatabase db = FirebaseDatabase.getInstance();
+        final DatabaseReference r_l = db.getReference().child("Liquid");
 
+        //Onclick Save
+        b_s.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    //Récupérer ce qu'il y'a dans l'Edit Text
+                    String r_et_ml = et_ml.getText().toString();
+                    String r_et_cl = et_cl.getText().toString();
+                    String r_et_dl = et_dl.getText().toString();
+                    String r_et_l = et_l.getText().toString();
+                    String r_et_dal = et_dal.getText().toString();
+                    String r_et_hl = et_hl.getText().toString();
+                    if (!r_et_ml.matches("") && !r_et_cl.matches("") && !r_et_dl.matches("") && !r_et_l.matches("")
+                            && !r_et_dal.matches("") && !r_et_hl.matches("")) {
+                        //Sauvegarder les données dans la base de données
+                        HashMap<String, String> timeMap = new HashMap<>();
+                        timeMap.put("ml",r_et_ml);
+                        timeMap.put("cl",r_et_cl);
+                        timeMap.put("dl",r_et_dl);
+                        timeMap.put("l",r_et_l);
+                        timeMap.put("dal",r_et_dal);
+                        timeMap.put("hl",r_et_hl);
+
+                        r_l.push().setValue(timeMap);
+                        tv_e.setText(getText(R.string.t_s));
+                        tv_e.setTextColor(Color.GREEN);
+                    } else {
+                        tv_e.setText(getText(R.string.t_ebd));
+                        tv_e.setTextColor(Color.RED);
+                    }
+
+                } catch (Exception e) {
+                    //En cas d'erreur
+                    tv_e.setText(getText(R.string.t_ebd));
+                    tv_e.setTextColor(Color.RED);
+                }
+            }
+        });
     }
 }

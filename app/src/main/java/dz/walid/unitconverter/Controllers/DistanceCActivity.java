@@ -194,9 +194,7 @@ public class DistanceCActivity extends AppCompatActivity {
                                     }
                                 }
                             }
-
                         }
-
                     }
                 } catch (Exception e) {
                     //En cas d'erreur

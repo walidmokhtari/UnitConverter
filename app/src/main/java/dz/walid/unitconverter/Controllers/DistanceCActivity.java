@@ -284,13 +284,13 @@ public class DistanceCActivity extends AppCompatActivity {
                             && !r_et_dam.matches("") && !r_et_hm.matches("")) {
                         //Sauvegarder les données dans la base de données
                         HashMap<String, String> timeMap = new HashMap<>();
-                        timeMap.put("mm",r_et_mm);
-                        timeMap.put("cm",r_et_cm);
-                        timeMap.put("dm",r_et_dm);
-                        timeMap.put("m",r_et_m);
-                        timeMap.put("dam",r_et_dam);
-                        timeMap.put("hm",r_et_hm);
-                        timeMap.put("km",r_et_km);
+                        timeMap.put("mmAf",r_et_mm);
+                        timeMap.put("cmAf",r_et_cm);
+                        timeMap.put("dmAf",r_et_dm);
+                        timeMap.put("mAf",r_et_m);
+                        timeMap.put("damAf",r_et_dam);
+                        timeMap.put("hmAf",r_et_hm);
+                        timeMap.put("kmAf",r_et_km);
 
                         r_d.push().setValue(timeMap);
                         tv_e.setText(getText(R.string.t_s));

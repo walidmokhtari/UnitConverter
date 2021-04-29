@@ -13,23 +13,47 @@ public class Weight {
     private double hg;
     private double kg;
 
+    //Attributs pour affichage
+    private String mgAf;
+    private String cgAf;
+    private String dgAf;
+    private String gAf;
+    private String dagAf;
+    private String hgAf;
+    private String kgAf;
+
     //Setters
-    public void setMg(double mg) { this.mg = mg;}
-    public void setCg(double cg) { this.cg = cg;}
-    public void setDg(double dg) { this.dg = dg;}
-    public void setG(double g) { this.g = g;}
-    public void setDag(double dag) { this.dag = dag;}
-    public void setHg(double hg) { this.hg = hg;}
-    public void setKg(double kg) { this.kg = kg;}
+    public void setMg(double mg) { this.mg = mg; }
+    public void setCg(double cg) { this.cg = cg; }
+    public void setDg(double dg) { this.dg = dg; }
+    public void setG(double g) { this.g = g; }
+    public void setDag(double dag) { this.dag = dag; }
+    public void setHg(double hg) { this.hg = hg; }
+    public void setKg(double kg) { this.kg = kg; }
+    public void setMgAf(String mgAf) { this.mgAf = mgAf; }
+    public void setCgAf(String cgAf) { this.cgAf = cgAf; }
+    public void setDgAf(String dgAf) { this.dgAf = dgAf; }
+    public void setgAf(String gAf) { this.gAf = gAf; }
+    public void setDagAf(String dagAf) { this.dagAf = dagAf; }
+    public void setHgAf(String hgAf) { this.hgAf = hgAf; }
+    public void setKgAf(String kgAf) { this.kgAf = kgAf; }
+
 
     //Getters
-    public double getMg() {return this.mg;}
-    public double getCg() {return this.cg;}
-    public double getDg() {return this.dg;}
-    public double getG() {return this.g;}
-    public double getDag() {return this.dag;}
-    public double getHg() {return this.hg;}
-    public double getKg() {return this.kg;}
+    public double getMg() { return mg; }
+    public double getCg() { return cg; }
+    public double getDg() { return dg; }
+    public double getG() { return g; }
+    public double getDag() { return dag; }
+    public double getHg() { return hg; }
+    public double getKg() { return kg; }
+    public String getMgAf() { return mgAf; }
+    public String getCgAf() { return cgAf; }
+    public String getDgAf() { return dgAf; }
+    public String getgAf() { return gAf; }
+    public String getDagAf() { return dagAf; }
+    public String getHgAf() { return hgAf; }
+    public String getKgAf() { return kgAf; }
 
     //Fonctions de conversions
 

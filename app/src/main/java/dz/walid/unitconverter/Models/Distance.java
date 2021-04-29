@@ -13,6 +13,15 @@ public class Distance {
     private double hm;
     private double km;
 
+    //Attributs pour affichage
+    private String mmAf;
+    private String cmAf;
+    private String dmAf;
+    private String mAf;
+    private String damAf;
+    private String hmAf;
+    private String kmAf;
+
     //Setters
     public void setMm(double mm) { this.mm = mm;}
     public void setCm(double cm) { this.cm = cm;}
@@ -21,6 +30,13 @@ public class Distance {
     public void setDam(double dam) { this.dam = dam;}
     public void setHm(double hm) { this.hm = hm;}
     public void setKm(double km) { this.km = km;}
+    public void setMmAf(String mmAf) { this.mmAf = mmAf; }
+    public void setCmAf(String cmAf) { this.cmAf = cmAf; }
+    public void setDmAf(String dmAf) { this.dmAf = dmAf; }
+    public void setmAf(String mAf) { this.mAf = mAf; }
+    public void setDamAf(String damAf) { this.damAf = damAf; }
+    public void setHmAf(String hmAf) { this.hmAf = hmAf; }
+    public void setKmAf(String kmAf) { this.kmAf = kmAf; }
 
     //Getters
     public double getMm() {return this.mm;}
@@ -30,6 +46,13 @@ public class Distance {
     public double getDam() {return this.dam;}
     public double getHm() {return this.hm;}
     public double getKm() {return this.km;}
+    public String getMmAf() { return mmAf; }
+    public String getCmAf() { return cmAf; }
+    public String getDmAf() { return dmAf; }
+    public String getmAf() { return mAf; }
+    public String getDamAf() { return damAf; }
+    public String getHmAf() { return hmAf; }
+    public String getKmAf() { return kmAf; }
 
     //Fonctions de conversions
 

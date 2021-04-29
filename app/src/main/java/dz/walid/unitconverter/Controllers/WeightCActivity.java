@@ -296,13 +296,13 @@ public class WeightCActivity extends AppCompatActivity {
                             && !r_et_dag.matches("") && !r_et_hg.matches("")) {
                         //Sauvegarder les données dans la base de données
                         HashMap<String, String> timeMap = new HashMap<>();
-                        timeMap.put("mg",r_et_mg);
-                        timeMap.put("cg",r_et_cg);
-                        timeMap.put("dg",r_et_dg);
-                        timeMap.put("g",r_et_g);
-                        timeMap.put("dag",r_et_dag);
-                        timeMap.put("hg",r_et_hg);
-                        timeMap.put("kg",r_et_kg);
+                        timeMap.put("mgAf",r_et_mg);
+                        timeMap.put("cgAf",r_et_cg);
+                        timeMap.put("dgAf",r_et_dg);
+                        timeMap.put("gAf",r_et_g);
+                        timeMap.put("dagAf",r_et_dag);
+                        timeMap.put("hgAf",r_et_hg);
+                        timeMap.put("kgAf",r_et_kg);
 
                         r_w.push().setValue(timeMap);
                         tv_e.setText(getText(R.string.t_s));

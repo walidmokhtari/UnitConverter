@@ -12,21 +12,45 @@ public class Liquid {
     private double dal;
     private double hl;
 
+    //Attributs pour affichage
+    private String mlAf;
+    private String clAf;
+    private String dlAf;
+    private String lAf;
+    private String dalAf;
+    private String hlAf;
+
+    //Constructeur
+    public Liquid() {
+    }
+
     //Setters
-    public void setMl(double ml) { this.ml = ml;}
-    public void setCl(double cl) { this.cl = cl;}
-    public void setDl(double dl) { this.dl = dl;}
-    public void setL(double l) { this.l = l;}
-    public void setDal(double dal) { this.dal = dal;}
-    public void setHl(double hl) { this.hl = hl;}
+    public void setMl(double ml) { this.ml = ml; }
+    public void setCl(double cl) { this.cl = cl; }
+    public void setDl(double dl) { this.dl = dl; }
+    public void setL(double l) { this.l = l; }
+    public void setDal(double dal) { this.dal = dal; }
+    public void setHl(double hl) { this.hl = hl; }
+    public void setMlAf(String mlAf) { this.mlAf = mlAf; }
+    public void setClAf(String clAf) { this.clAf = clAf; }
+    public void setDlAf(String dlAf) { this.dlAf = dlAf; }
+    public void setlAf(String lAf) { this.lAf = lAf; }
+    public void setDalAf(String dalAf) { this.dalAf = dalAf; }
+    public void setHlAf(String hlAf) { this.hlAf = hlAf; }
 
     //Getters
-    public double getMl() {return this.ml;}
-    public double getCl() {return this.cl;}
-    public double getDl() {return this.dl;}
-    public double getL() {return this.l;}
-    public double getDal() {return this.dal;}
-    public double getHl() {return this.hl;}
+    public double getMl() { return ml; }
+    public double getCl() { return cl; }
+    public double getDl() { return dl; }
+    public double getL() { return l; }
+    public double getDal() { return dal; }
+    public double getHl() { return hl; }
+    public String getMlAf() { return mlAf; }
+    public String getClAf() { return clAf; }
+    public String getDlAf() { return dlAf; }
+    public String getlAf() { return lAf; }
+    public String getDalAf() { return dalAf; }
+    public String getHlAf() { return hlAf; }
 
     //Fonctions de conversions
 

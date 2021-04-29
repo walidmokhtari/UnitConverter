@@ -127,9 +127,9 @@ public class TimeCActivity extends AppCompatActivity {
                     if (!r_et_s.matches("") && !r_et_min.matches("") && !r_et_h.matches("")) {
                         //Sauvegarder les données dans la base de données
                         HashMap<String, String> timeMap = new HashMap<>();
-                        timeMap.put("s",r_et_s);
-                        timeMap.put("min",r_et_min);
-                        timeMap.put("h",r_et_h);
+                        timeMap.put("secondeAf",r_et_s);
+                        timeMap.put("minuteAf",r_et_min);
+                        timeMap.put("heureAf",r_et_h);
 
                         r_t.push().setValue(timeMap);
                         tv_e.setText(getText(R.string.t_s));

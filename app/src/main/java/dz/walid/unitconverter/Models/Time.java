@@ -4,24 +4,40 @@ package dz.walid.unitconverter.Models;
  * Created by Walid on 26/04/2021.
  */
 public class Time {
+
     //Attributs
     private double seconde;
     private double minute;
     private double heure;
 
+    //Attributs pour affichage
+    private String secondeAf;
+    private String minuteAf;
+    private String heureAf;
+
+    //Constructeur
+    public Time() {
+    }
+
 
     //Setters
-    public void setSeconde(double s) { this.seconde = s;}
-    public void setMinute(double m) { this.minute = m;}
-    public void setHeure(double h) { this.heure = h;}
+    public void setSeconde(double seconde) { this.seconde = seconde; }
+    public void setMinute(double minute) { this.minute = minute; }
+    public void setHeure(double heure) { this.heure = heure; }
+    public void setSecondeAf(String secondeAf) { this.secondeAf = secondeAf; }
+    public void setMinuteAf(String minuteAf) { this.minuteAf = minuteAf; }
+    public void setHeureAf(String heureAf) { this.heureAf = heureAf; }
+
 
     //Getters
-    public double getSeconde() { return this.seconde;}
-    public double getMinute() { return this.minute;}
-    public double getHeure() { return this.heure;}
+    public double getSeconde() { return seconde; }
+    public double getMinute() { return minute; }
+    public double getHeure() { return heure; }
+    public String getSecondeAf() { return secondeAf; }
+    public String getMinuteAf() { return minuteAf; }
+    public String getHeureAf() { return heureAf; }
 
     //Fonctions de conversions
-
     //Du seconde vers autres
     public void SToM(double s) { this.minute = s * 0.0166667; }
     public void SToH(double s) { this.heure = s * 0.000277778; }

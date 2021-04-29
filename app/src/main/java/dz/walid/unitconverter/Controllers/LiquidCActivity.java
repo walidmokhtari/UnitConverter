@@ -247,12 +247,12 @@ public class LiquidCActivity extends AppCompatActivity {
                             && !r_et_dal.matches("") && !r_et_hl.matches("")) {
                         //Sauvegarder les données dans la base de données
                         HashMap<String, String> timeMap = new HashMap<>();
-                        timeMap.put("ml",r_et_ml);
-                        timeMap.put("cl",r_et_cl);
-                        timeMap.put("dl",r_et_dl);
-                        timeMap.put("l",r_et_l);
-                        timeMap.put("dal",r_et_dal);
-                        timeMap.put("hl",r_et_hl);
+                        timeMap.put("mlAf",r_et_ml);
+                        timeMap.put("clAf",r_et_cl);
+                        timeMap.put("dlAf",r_et_dl);
+                        timeMap.put("lAf",r_et_l);
+                        timeMap.put("dalAf",r_et_dal);
+                        timeMap.put("hlAf",r_et_hl);
 
                         r_l.push().setValue(timeMap);
                         tv_e.setText(getText(R.string.t_s));

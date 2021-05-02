@@ -27,3 +27,15 @@ et la sauvegarder si il le souhaite et juste en cliquant sure le boutton 'sauveg
 
 2 - L'utilisateur peut voir l'historique de toutes les conversions faites par les autres utilisateurs ou par lui même en cliquant sur le bouton 'Historique des conversions'
 , l'application va récupérer toutes les conversions sauvegardées dans la base de donnée et les affiches.
+
+
+-----------------------------------------------------------------------------------------
+Documentation : 
+
+Application crée par Walid MOKHTARI, utilisation de langage JAVA a 100% pour le back et XML pour la view.
+Environnement :
+Android Studio 3.5.1
+Build #AI-191.8026.42.35.5900203, built on September 25, 2019
+JRE: 1.8.0_202-release-1483-b03 amd64
+JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+Windows 8.1 6.3
